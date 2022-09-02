@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkdashboard_frontend"]=self["webpackChunkdashboard_frontend"]||[]).push([[840],{9840:function(n,r,e){e.r(r),e.d(r,{default:function(){return f}});var t=function(){var n=this;n._self._c;return n._m(0)},a=[function(){var n=this,r=n._self._c;return r("div",[r("h1",[n._v("404")]),r("p",[n._v("Oops! Something is wrong.")])])}],u={name:"LandingPage",data(){return{}}},s=u,d=e(1001),o=(0,d.Z)(s,t,a,!1,null,"730cdad6",null),f=o.exports}}]);
+//# sourceMappingURL=840.658c39df.js.map
