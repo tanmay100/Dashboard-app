@@ -54,12 +54,16 @@ const notifications = require('./routes/api/notifications')
 app.use('/api/notifications',notifications)
 
 // Added for deployment
-if(process.env.Node_ENV === 'production'){
-    app.use(express.static(__dirname+'/dist/'))
-    app.get('*',(req,res)=>{
-        res.sendFile(__dirname + "/dist/index.html")
-    })
-}
+// if(process.env.Node_ENV === 'production'){
+//     app.use(express.static(__dirname+'/dist/'))
+//     app.get('*',(req,res)=>{
+//         res.sendFile(__dirname + "/dist/index.html")
+//     })
+// }
+
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname,'public/index.html'))
+})
 
 
 const PORT =  process.env.PORT || 5000
